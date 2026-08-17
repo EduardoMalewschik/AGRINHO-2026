@@ -1,25 +1,30 @@
-const numeroSenha = document.querySelector('.parametro-senha__texto');
-let tamanhoSenha = 12;
-numeroSenha.textContent = tamanhoSenha;
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('formMessage');
 
-const botoes = document.querySelectorAll('.parametro-senha__botao');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
 
-console.log(botoes)
-botoes[0].onclick = diminuiTamanho;
-botoes[1].onclick = aumentaTamanho;
+            const nameInput = document.getElementById('name').value.trim();
+            const emailInput = document.getElementById('email').value.trim();
 
-function diminuiTamanho(){
-    if (tamanhoSenha > 1){
-       // tamanhoSenha = tamanhoSenha-1;
-        tamanhoSenha--;
+            if (nameInput === '' || emailInput === '') {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+
+            // Simulação de envio bem-sucedido
+            formMessage.textContent = `Obrigado, ${nameInput}! Sua mensagem sobre o futuro sustentável foi enviada com sucesso.`;
+            formMessage.classList.remove('hidden');
+
+            contactForm.reset();
+
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 5000);
+        });
     }
-    numeroSenha.textContent = tamanhoSenha;
-}
 
-function aumentaTamanho(){
-    if (tamanhoSenha < 20){
-       // tamanhoSenha = tamanhoSenha+1;
-       tamanhoSenha++;
-    }
-    numeroSenha.textContent = tamanhoSenha;
-}
+    console.log('Site Agrinho 2026 carregado e interativo com sucesso!');
+});
