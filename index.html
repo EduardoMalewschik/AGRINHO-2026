@@ -1,214 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Agro Forte - Futuro Sustentável</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header>
-    <h1>Agro Forte</h1>
-
-    <p>
-        Futuro sustentável: equilíbrio entre produção e meio ambiente.
-        Construindo uma agricultura moderna, consciente e responsável.
-    </p>
-
-    <a href="#sobre" class="btn">Saiba Mais</a>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-        <li><a href="#tecnologia">Tecnologia</a></li>
-        <li><a href="#estatisticas">Dados</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-    </ul>
-</nav>
-
-<section id="sobre">
-
-    <div class="titulo">
-        <h2>O Agro e o Futuro</h2>
-        <p>Produção eficiente com respeito à natureza.</p>
-    </div>
-
-    <div class="sobre">
-
-        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1000&q=80" alt="Agricultura sustentável">
-
-        <div class="sobre-texto">
-            <p>
-                O agronegócio sustentável busca unir tecnologia,
-                produtividade e preservação ambiental.
-            </p>
-
-            <br>
-
-            <p>
-                O futuro do campo depende da inovação, do uso inteligente
-                da água, da energia limpa e da valorização dos produtores.
-            </p>
+    <header class="header">
+        <div class="container">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio essencial entre alta produção e a preservação do meio ambiente.</p>
         </div>
+    </header>
 
-    </div>
+    <main class="container">
+        <section class="content-section">
+            <div class="text-box">
+                <h2>Produção e Sustentabilidade</h2>
+                <p>A agricultura moderna evoluiu para unir tecnologia de ponta e respeito à natureza. Práticas como o plantio direto, rotação de culturas e uso consciente da água garantem alimentos de qualidade para o mundo, preservando os recursos naturais para as próximas gerações.</p>
+            </div>
+            <div class="image-box">
+                <img src="assets/agro-sustentavel.jpg" alt="Plantação verde sustentável representando o equilíbrio ambiental">
+            </div>
+        </section>
 
-</section>
+        <section class="content-section reverse">
+            <div class="image-box">
+                <img src="assets/tecnologia-campo.jpg" alt="Tecnologia aplicada ao campo com foco em inovação verde">
+            </div>
+            <div class="text-box">
+                <h2>Inovação no Campo</h2>
+                <p>O uso de inteligência de dados, agricultura de precisão e fontes de energia renováveis nas fazendas mostra que é possível produzir mais gastando menos recursos, reduzindo o impacto ecológico e fortalecendo a economia rural.</p>
+            </div>
+        </section>
 
-<section id="sustentabilidade">
+        <section class="contact-section">
+            <h2>Participe da Nossa Causa</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Seu nome" required>
+                <input type="email" id="email" placeholder="Seu e-mail" required>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <p id="formMessage" class="hidden"></p>
+        </section>
+    </main>
 
-    <div class="titulo">
-        <h2>Sustentabilidade no Campo</h2>
-        <p>Ações que fazem a diferença.</p>
-    </div>
+    <footer class="footer">
+        <p>&copy; 2026 Projeto Agrinho. Todos os direitos reservados.</p>
+    </footer>
 
-    <div class="cards">
-
-        <div class="card">
-            <h3>🌱 Preservação Ambiental</h3>
-            <p>Proteção das florestas, rios e biodiversidade.</p>
-        </div>
-
-        <div class="card">
-            <h3>💧 Uso Inteligente da Água</h3>
-            <p>Redução do desperdício com irrigação moderna.</p>
-        </div>
-
-        <div class="card">
-            <h3>☀ Energia Renovável</h3>
-            <p>Energia solar e tecnologias limpas no campo.</p>
-        </div>
-
-        <div class="card">
-            <h3>🚜 Agricultura Tecnológica</h3>
-            <p>Automação e monitoramento inteligente.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="tecnologia">
-
-    <div class="titulo">
-        <h2>Tecnologia e Inovação</h2>
-        <p>O campo conectado ao futuro.</p>
-    </div>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>📡 Monitoramento Inteligente</h3>
-            <p>Sensores e drones monitoram plantações em tempo real.</p>
-        </div>
-
-        <div class="card">
-            <h3>🌾 Produção Sustentável</h3>
-            <p>Maior produtividade com menor impacto ambiental.</p>
-        </div>
-
-        <div class="card">
-            <h3>♻ Economia Verde</h3>
-            <p>Desenvolvimento econômico aliado à preservação.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="estatisticas">
-
-    <div class="titulo">
-        <h2>Números do Agro</h2>
-        <p>Indicadores importantes para o futuro.</p>
-    </div>
-
-    <div class="cards">
-
-        <div class="card numero">
-            <h3>85%</h3>
-            <p>Eficiência hídrica com irrigação inteligente.</p>
-        </div>
-
-        <div class="card numero">
-            <h3>40%</h3>
-            <p>Redução de desperdícios com agricultura de precisão.</p>
-        </div>
-
-        <div class="card numero">
-            <h3>100%</h3>
-            <p>Compromisso com práticas sustentáveis.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="galeria">
-
-    <div class="titulo">
-        <h2>Galeria</h2>
-        <p>Imagens do agro sustentável.</p>
-    </div>
-
-    <div class="galeria">
-
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=80">
-
-        <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?auto=format&fit=crop&w=1000&q=80">
-
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80">
-
-    </div>
-
-</section>
-
-<section id="contato">
-
-    <div class="titulo">
-        <h2>Entre em Contato</h2>
-        <p>Envie sua mensagem.</p>
-    </div>
-
-    <form class="formulario">
-
-        <input type="text" placeholder="Seu nome">
-
-        <input type="email" placeholder="Seu e-mail">
-
-        <textarea rows="5" placeholder="Sua mensagem"></textarea>
-
-        <button class="btn">Enviar</button>
-
-    </form>
-
-</section>
-
-<footer>
-
-    <h3>Agro Forte</h3>
-
-    <p>
-        Sustentabilidade, inovação e tecnologia para um futuro melhor.
-    </p>
-
-    <p>© 2026 Todos os direitos reservados.</p>
-
-</footer>
-    
-<script src="main.js"></script>
-    
+    <script src="script.js"></script>
 </body>
 </html>
